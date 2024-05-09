@@ -1,0 +1,30 @@
+<div class="chat-container" [ngClass]="{ 'slide-out': !isChatVisible, 'slide-in': isChatVisible }" *ngIf="userSrv.user">
+    <div class="header">
+      <div [ngClass]="{ 'slide-out-button': !isChatVisible, 'slide-in-button': isChatVisible }" (click)="hideChat()">
+        <span>
+          <img src="../../../../assets/img/chatLogo.png" alt="" width="70px" />
+        </span>
+      </div>
+      <h1>Chat Global</h1>
+      <div [ngClass]="{ 'slide-in-button': isChatVisible, 'slide-out-button': !isChatVisible }" (click)="hideChat()">
+        <span>
+          <img src="../../../../assets/img/chatLogo.png" alt="" width="70px" />
+        </span>
+      </div>
+    </div>
+    <div class="mensaje-container scroll-window" #messagesBox>
+      <div *ngFor="let message of chatService.mensajes" class="mensaje">
+        <div [ngClass]="{ 'message-bubble': true, 'isUser': message.user?.email === userSrv.user.email }">
+          <p class="userName">
+            <b>{{ message.user.name }}</b>
+          </p>
+          <p class="mensaje">{{ message.message }}</p>
+          <p class="time">{{ message.hora }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="row base">
+      <input [(ngModel)]="newMessage" (keyup.enter)="onSubmit()" placeholder="Escribe un mensaje" />
+      <button type="button" class="btn btn-success" (click)="onSubmit()">Enviar</button>
+    </div>
+  </div>

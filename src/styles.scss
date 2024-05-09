@@ -1,1 +1,30 @@
+
 /* You can add global styles to this file, and also import other style files */
+.validators {
+    color: red;
+    text-align: justify;
+  }
+  input,
+  select {
+    border-radius: 10px;
+    padding: 5px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  .scroll-window {
+    height: 200px; /* Altura deseada de la ventana */
+    width: 100%;
+    overflow-y: scroll; /* Habilita el desplazamiento vertical */
+  }
+  body {
+    background-image: url("./assets/img/fondo.jpg");
+    background-size: cover; /* Para asegurarte de que la imagen cubra toda la pantalla */
+    background-position: center; /* Para centrar la imagen */
+    background-repeat: no-repeat; /* Para que la imagen no se repita */
+    margin: 0; /* Para eliminar cualquier margen predeterminado del cuerpo */
+    padding: 0; /* Para eliminar cualquier relleno predeterminado del cuerpo */
+
+  }
+  

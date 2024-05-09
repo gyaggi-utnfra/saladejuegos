@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "saladejuegos-d3933": {
+      "hosting": {
+        "saladejuegos": [
+          "saladejuegos-d3933"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "saladejuegos-d3933"
+  }
+}

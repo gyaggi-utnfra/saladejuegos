@@ -80,7 +80,7 @@ export class AhorcadoComponent {
         if (res.isConfirmed) {
           this.reiniciarJuego();
         } else {
-          this.utilsSrv.routerLink('/');
+          this.utilsSrv.routerLink('/home');
         }
       });
     }

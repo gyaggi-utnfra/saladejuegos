@@ -72,7 +72,7 @@ export class BlackJackComponent {
           if (res.isConfirmed) {
             this.reiniciar();
           } else {
-            this.utilsSrv.routerLink('/');
+            this.utilsSrv.routerLink('/home');
           }
         }
       );

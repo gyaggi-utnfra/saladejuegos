@@ -33,7 +33,7 @@ export class MayorMenorComponent {
         if (res.isConfirmed) {
           this.juegoMayorMenor.reiniciarJuego();
         } else {
-          this.utilsSrv.routerLink('/');
+          this.utilsSrv.routerLink('/home');
         }
       });
     }

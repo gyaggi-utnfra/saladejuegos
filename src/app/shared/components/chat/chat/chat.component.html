@@ -15,9 +15,7 @@
     <div class="mensaje-container scroll-window" #messagesBox>
       <div *ngFor="let message of chatService.mensajes" class="mensaje">
         <div [ngClass]="{ 'message-bubble': true, 'isUser': message.user?.email === userSrv.user.email }">
-          <p class="userName">
-            <b>{{ message.user.name }}</b>
-          </p>
+
           <p class="mensaje">{{ message.message }}</p>
           <p class="time">{{ message.hora }}</p>
         </div>

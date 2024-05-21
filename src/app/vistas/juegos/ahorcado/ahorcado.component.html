@@ -1,0 +1,19 @@
+<div class="row img-ahorcado">
+    <!--   <h1>Ahorcado</h1> -->
+  
+    <div class="col">
+      <img [src]="imaMostrar" alt="" />
+      <div class="marcador">
+        <p>{{ palabraMostrada }}</p>
+      </div>
+    </div>
+  
+    <div class="col teclado">
+      <app-letras
+        [juegoTerminado]="juegoTerminado"
+        (botones)="listB($event)"
+        (letraSeleccionada)="letraSeleccionada($event)"
+      ></app-letras>
+    </div>
+  </div>
+  

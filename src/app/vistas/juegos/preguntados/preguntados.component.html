@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+      <div class="col-6 portal">
+        <div class="imagen-container">
+          <img [src]="respuesta.image" alt="" />
+        </div>
+      </div>
+      <div class="col-6 pregunta-container">
+        <div class="pregunta">
+          <p>¿Qué personaje es?</p>
+        </div>
+        <div class="opciones">
+          <div *ngFor="let item of listaOpciones">
+            <button
+              class="btn btn-primary"
+              (click)="responde(item)"
+              [ngClass]="{ disabled: botonBloqueado }"
+            >
+              {{ item.name }}
+            </button>
+          </div>
+        </div>
+        <div class="puntuacion">
+          <p>Puntuación: {{ puntuacion }}</p>
+        </div>
+      </div>
+    </div>
+  </div>

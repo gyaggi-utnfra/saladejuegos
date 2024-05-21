@@ -1,11 +1,14 @@
 <app-navbar></app-navbar>
 <div class="container">
-    <h1 class="mt-5 text-white">Lista de Juegos</h1>
-    <ul class="list-group mt-3">
-        <li class="list-group-item">Ahorcado</li>
-        <li class="list-group-item">Mayor o Menor</li>
-    </ul>
-</div>
-<div>
-    <app-chat></app-chat>
-</div>
+    <div class="row">
+      <div class="col-4" *ngFor="let item of juegos">
+        <app-tarjeta-juegos
+          [img]="item.img"
+          [nombre]="item.nombre"
+          [link]="item.link"
+        ></app-tarjeta-juegos>
+      </div>
+    </div>
+  </div>
+<app-chat></app-chat>
+  

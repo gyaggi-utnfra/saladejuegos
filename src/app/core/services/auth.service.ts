@@ -91,7 +91,7 @@ export class AuthService {
         });
   }
 
-  private getUser(): Observable<any> {
+  getUser(): Observable<any> {
     return this.utilsSrv.getElementInLocalstorage('user');
   }
 }

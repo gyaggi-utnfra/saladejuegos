@@ -50,7 +50,7 @@ export class Alert {
     return Swal.fire({
       title: title,
       text: text,
-      imageUrl: '../../../assets/img/game-over.png',
+      imageUrl: '../../assets/img/game-over.png',
       imageWidth: 400,
       imageHeight: 400,
       imageAlt: 'Custom image',

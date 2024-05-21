@@ -1,0 +1,19 @@
+<div class="container contenedor-cartas row">
+    <div class="col row">
+      <div class="col-4" *ngFor="let carta of juegoMayorMenor.cartasMostradas">
+        <img *ngIf="carta.bocaArriba" [src]="carta.img" alt="" />
+        <img *ngIf="!carta.bocaArriba" [src]="carta.dorso" alt="" />
+      </div>
+    </div>
+    <div class="col info">
+      <p>Carta actual: {{ juegoMayorMenor.cartaActual.valor }}</p>
+      <p>Puntaje: {{ juegoMayorMenor.puntaje }}</p>
+      <button (click)="compararRespuesta('mayor')" class="btn btn-dark">
+        Mayor
+      </button>
+      <button (click)="compararRespuesta('menor')" class="btn btn-dark">
+        Menor
+      </button>
+    </div>
+  </div>
+  

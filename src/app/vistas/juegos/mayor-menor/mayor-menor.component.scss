@@ -1,0 +1,36 @@
+/* Estilos para el contenedor principal del juego */
+.container.contenedor-cartas {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea los elementos arriba */
+    padding: 20px;
+  }
+  
+  /* Estilos para la sección de cartas */
+  .contenedor-cartas .cartas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  /* Estilos para cada carta */
+  .contenedor-cartas .col-4 {
+    flex: 1 0 calc(33.33% - 10px);
+    max-width: calc(33.33% - 10px);
+  }
+  
+  /* Estilos para el contenedor del puntaje */
+  .contenedor-cartas .info {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    flex: 0 0 auto; /* Cambiado para evitar que el contenedor del puntaje se expanda */
+    width: 200px;
+    color: white; /* Color de texto en blanco */
+  }
+  
+  /* Estilos para el texto dentro de la sección de información */
+  .contenedor-cartas .info p {
+    font-weight: bold;
+  }

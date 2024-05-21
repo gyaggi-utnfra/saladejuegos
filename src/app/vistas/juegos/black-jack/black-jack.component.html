@@ -1,0 +1,40 @@
+<div class="container contenedor-cartas row">
+    <div class="col">
+      <div>
+        <div class="row banca-cartas">
+          <div
+            class="col-2 nuevaCarta"
+            *ngFor="let carta of juegoBlackJack.bancaCartas"
+          >
+            <img [src]="carta.imagenMostrar" alt="" />
+          </div>
+        </div>
+        <div class="info">
+          <button
+            (click)="pedirCarta()"
+            [ngClass]="{ disabled: botonBloqueado }"
+            class="btn btn-dark"
+          >
+            Pedir Carta
+          </button>
+          <button
+            (click)="plantarse()"
+            [ngClass]="{ disabled: botonBloqueado }"
+            class="btn btn-dark"
+          >
+            Plantarse
+          </button>
+        </div>
+  
+        <div class="row">
+          <div
+            class="mis-cartas col-2 nuevaCarta"
+            *ngFor="let carta of juegoBlackJack.misCartas"
+          >
+            <img [src]="carta.imagenMostrar" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

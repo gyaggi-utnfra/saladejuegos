@@ -1,0 +1,21 @@
+button {
+  margin: 5px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  width: 30%;
+  background-color: rgba(10, 160, 246, 0.9);
+  color: rgb(103, 119, 111);
+  font-weight: bold;
+  font-size: 30px;
+}
+.letras {
+  text-align: center;
+  width: 400px;
+  padding: 0;
+}
+.button-usado {
+  background-color: rgba(125, 125, 125, 0.9);
+}

@@ -54,6 +54,7 @@ export class Alert {
       imageWidth: 400,
       imageHeight: 400,
       imageAlt: 'Custom image',
+      allowOutsideClick: false,
       showCancelButton: true,
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
